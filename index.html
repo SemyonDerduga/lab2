@@ -73,6 +73,54 @@
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
         </div>
     </section>
+    <!-- Новый слайд-->
+    <section class="slide" id="resume">
+        <h2>Выводы</h2>
+        <ol align = "right" class = "spisok">
+            <li>Был создан слайд с использованием HTML и CSS</li>
+            <li>Изучена технология веб-презентации</li>
+            <li>Применена работа с Node.js</li>
+            <li>Презентация размещена на Git</li>
+        </ol>
+        <style>
+            #resume h2 {
+                padding-left: 580px;
+                font-size: 70px;
+                color: #000000;
+                font-family: monospace;
+            }
+
+            #resume {
+                background: url("pictures/59749.jpg") center no-repeat
+            }
+
+            #resume ol {
+                position: relative;
+                font-size: 28px;
+                color: white;
+                text-shadow: black 1px 1px 0, black -1px -1px 0, black -1px 1px 0, black 1px -1px 0;
+                text-transform: uppercase;
+                font-family: monospace;
+                z-index: 1;
+                overflow: hidden;
+                list-style-type: upper-alpha;
+            }
+
+            #resume ol:before {
+                content: "";
+                position: absolute;
+                top: -60%;
+                left: -50%;
+                height: 200%;
+                width: 200%;
+                background: url("pictures/59749.jpg") center no-repeat;
+                filter: blur(10px);
+                z-index: -1;
+            }
+
+        </style>
+    </section>
+
 
     <section class="slide">
         <h2>All kind of lists</h2>
